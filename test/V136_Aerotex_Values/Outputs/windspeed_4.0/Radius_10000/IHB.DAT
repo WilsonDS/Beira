@@ -1,0 +1,165 @@
+Anti-icing, 2m chord,NACA0012,aluminium wing,-12C,250KTAS,0.54g/m3,20um,5000ft
+   2          ! Run type 0=unheated, 1=minimum (ideal) AI power, 2=Electrothermal AI, I4 FORMAT
+NACA0012      ! Aerofoil name, max 12 characters
+128.7         ! Freestream velocity / flight speed in m/s. F10.0 - normal to leading edge
+4.0           ! Angle of atack, in degrees, F10.0
+2.0000        ! Aerofoil chord length in metres, F10.0
+0  84.3 5000.0     ! Input pressure altitude 0=use input PINF in KPa, =0, calculate PINF from pressure alt, ft [*]
+-12.0         ! Freestream static temperature / OAT, C, F10.0
+20.0          ! Cloud VMD / droplet diameter in mircons, F10.0
+0.54          ! Cloud liquid water concentration, in g/m3
+15.0          ! Icing encounter time in minutes
+1.0           ! Surface wettedness factor. Can be used to simulate rivuelt fornation aft of direct impingemebnt. Typically 0.2-0.3. Set=1.0 to disable.
+100.0         ! Relative humidity, percent, F10.0, normally 100.0 for saturated air, potentially less in icing tunnels
+0.0001790     ! Surface equivalent sand grain roughess, in metres, used when calculating heat transfer coeff. metres, F10.0
+0.002000      ! Surface material thickness, m, F10.0
+167.0         ! Surface thermal conductivity in W.m-1.K-1, F10.0
+0.0001        ! Convergence tolerance on nodal temperature in degrees C, F10.0
+0.0001        ! Convergence tolerance on nodal freezing fraction, F10.0
+0.10          ! Solution relaxation factor, typically 0.1
+5000          ! Maximum number of iterations allowed for a converged solution to be achieved, I4
+  0.000000    ! s/c limit on lower surface of ice from a previous icing step, set to zero if not multi-step
+  0.000000    ! s/c limit on upper surface of ice from a previous icing step, set to zero if not multi-step
+   0          ! Control for runback water shed from tip of glaze horns, 1=true, 0=false. I4
+   0   0      ! Control for ice shape smoothing 1=truefollowed by number of levels of smoothing (typially 1-3)
+  62          ! Total number of surface nodes lower and upper surface of aerofoil, I4.
+   1          ! Indicator for local pressure input as Cp (=0) or P/H0 (<>0), I4 
+  x/c     y/c      s/c    Cp/Ph0  htc   beta
+0.04792 -0.03490 -0.0625 0.92858 421.8 0.000
+0.04555 -0.03410 -0.0600 0.93065 421.1 0.007
+0.04319 -0.03328 -0.0575 0.93277 420.1 0.017
+0.04083 -0.03246 -0.0550 0.93487 419.6 0.028
+0.03847 -0.03164 -0.0525 0.93694 419.6 0.041
+0.03610 -0.03082 -0.0500 0.93898 420.5 0.055
+0.03378 -0.02990 -0.0475 0.94170 418.4 0.071
+0.03148 -0.02891 -0.0450 0.94486 414.0 0.089
+0.02919 -0.02792 -0.0425 0.94794 410.4 0.108
+0.02689 -0.02693 -0.0400 0.95095 408.0 0.128
+0.02460 -0.02595 -0.0375 0.95387 407.2 0.150
+0.02240 -0.02476 -0.0350 0.95850 395.5 0.174
+0.02021 -0.02355 -0.0325 0.96301 384.0 0.199
+0.01801 -0.02235 -0.0300 0.96727 374.4 0.225
+0.01582 -0.02115 -0.0275 0.97128 369.1 0.253
+0.01379 -0.01969 -0.0250 0.97742 345.5 0.283
+0.01178 -0.01821 -0.0225 0.98297 332.6 0.313
+0.00976 -0.01674 -0.0200 0.98775 145.0 0.345
+0.00791 -0.01507 -0.0175 0.99314 155.3 0.377
+0.00619 -0.01326 -0.0150 0.99765 155.2 0.410
+0.00447 -0.01144 -0.0125 0.99981 167.5 0.443
+0.00373 -0.01051 -0.0113 0.99978 173.6 0.459
+0.00311 -0.00937 -0.0100 0.99798 179.7 0.475
+0.00253 -0.00832 -0.0088 0.99439 196.4 0.491
+0.00190 -0.00718 -0.0075 0.98904 201.1 0.507
+0.00132 -0.00613 -0.0063 0.98197 378.1 0.522
+0.00088 -0.00492 -0.0050 0.97212 441.6 0.537
+0.00067 -0.00374 -0.0038 0.95891 514.0 0.544
+0.00044 -0.00246 -0.0025 0.94339 580.2 0.534
+0.00023 -0.00128 -0.0013 0.92571 640.7 0.506
+0.00000  0.00000  0.0000 0.90604 695.6 0.461
+0.00021  0.00118  0.0012 0.88907 727.4 0.398
+0.00044  0.00246  0.0025 0.87106 758.6 0.318
+0.00065  0.00364  0.0037 0.85209 788.2 0.220
+0.00088  0.00492  0.0050 0.83228 815.7 0.105
+0.00127  0.00604  0.0062 0.81767 824.2 0.000
+0.00190  0.00718  0.0075 0.80843 818.5 0.000
+0.00248  0.00823  0.0087 0.79907 815.8 0.000
+0.00311  0.00937  0.0100 0.78959 815.1 0.000
+0.00369  0.01042  0.0112 0.78001 815.8 0.000
+0.00447  0.01144  0.0125 0.77478 806.9 0.000
+0.00530  0.01231  0.0137 0.77234 793.3 0.000
+0.00619  0.01326  0.0150 0.76989 781.8 0.000
+0.00791  0.01507  0.0175 0.76497 763.5 0.000
+0.00976  0.01674  0.0200 0.76253 744.2 0.000
+0.01178  0.01821  0.0225 0.76317 722.3 0.000
+0.01379  0.01969  0.0250 0.76381 703.7 0.000
+0.01582  0.02115  0.0275 0.76450 687.5 0.000
+0.01801  0.02235  0.0300 0.76602 671.5 0.000
+0.02021  0.02355  0.0325 0.76754 657.2 0.000
+0.02240  0.02476  0.0350 0.76906 644.3 0.000
+0.02460  0.02595  0.0375 0.77058 632.5 0.000
+0.02689  0.02693  0.0400 0.77222 621.3 0.000
+0.02919  0.02792  0.0425 0.77386 610.9 0.000
+0.03148  0.02891  0.0450 0.77550 601.2 0.000
+0.03378  0.02990  0.0475 0.77714 592.1 0.000
+0.03610  0.03082  0.0500 0.77871 583.6 0.000
+0.03847  0.03164  0.0525 0.78018 575.8 0.000
+0.04083  0.03246  0.0550 0.78166 568.3 0.000
+0.04319  0.03328  0.0575 0.78313 561.2 0.000
+0.04555  0.03410  0.0600 0.78460 554.4 0.000
+0.04792  0.03490  0.0625 0.78601 551.1 0.000
+  10          ! Number of zones to be used in heat balance calculation, maximum 50, I4
+-0.12000      ! Start distance, metre ** NOT S/C ** (-ve = lower surface, aft) 
+ zone width (m)  no.nodes (spaces),  heat input (kW/m2) 1 line of data for each zone
+0.02250  8 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02500  9 15500.0
+0.02000  9 15500.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   8          ! Number of zones to be used in heat balance calculation, followed by start distance(-ve l/s), width (metre), number of nodes, heat i/p free format
+-0.08090      ! Start distance, metre (-ve = lower surface, aft)
+ zone width (m)  no.nodes (spaces),  heat input (kW/m2) 1 line of data for each zone
+0.00500  2     0.0
+0.05510 11 20150.0
+0.04160  8 23250.0
+0.04862 10 37200.0
+0.03249  6 32550.0
+0.06966 14     0.0
+0.04644  9     0.0
+0.01150  4     0.0
+
+
+
+'Minimum power' configuration, 4 heaters

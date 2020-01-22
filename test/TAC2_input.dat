@@ -1,0 +1,18 @@
+$TITLE = Trajectory verification:NACA0012,AoA=0.0, VMD=20um; title can be anything
+$AERO = 0; Icing run
+$TRAJ = 0; Mono-disperse droplets
+$ICE = 0; No ice shape calculation or output files
+
+$TAS = 100.0; True airspeed (m/s)  Relative velocity (interpolated from table)
+$AOAI = 0.0; Initial incidence angle (degrees) (interpolated from tables)
+$CHORDM = 1.0; Aerofil chord (m) Chord from blade geoemtry at that section
+$ALTF = 0.0; Altitude (feet) hub height converted to feet
+$OATC = 10.0; Static temperature (degrees C) weather case temperature converted to degreesC
+$RH = 100.0; Relative humidity (%) from input file
+$VMD = 20.0; Droplet VMD (microns) from input file
+ 
+$NCOMP = 1; Number of aerofoil components
+$DELS = 0.003; Non-dimensional surface node spacing (as it is)
+$N_UPP = 100; Number of nodes on upper surface (as it is)
+$N_LOW = 100; Number of nodes on lower surface (as it is)
+$RUFF = 8; Surface roughness (microns) (as it is)

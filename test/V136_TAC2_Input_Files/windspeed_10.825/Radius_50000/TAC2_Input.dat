@@ -1,0 +1,22 @@
+$TITLE = Demo Case; 
+ 
+$AERO = 0; Icing analysis (0 for icing, 1 for aerodynamic only)
+$TRAJ = 0; Mono-disperse droplets (0 for mono-disperse, 1 for Langmuir-D spectrum, 2 for user-defined spectrum)
+$ICE = 1; No ice shape output (0 for no ice shape, 1 for creation of IHB and ET3D input files)
+ 
+$TAS = 51.19229999999995; Airspeed, true (m/s)
+$AOAI = 2.2740499999999986; Initial angle of attack (degrees)
+$CHORDM = 1.839493; Aerofil chord (m)
+$ALTF = 367.45408; Altitude (feet)
+$ALTM = 112.0; Altitude (meter)
+$OATC = -14.037999999999954; Static temperature (deg. C)
+$VMD = 20; Droplet median diameter (microns)
+$LWC = 0.0012699999999999999; Liquid water concentration (g/m3)
+$TIME = 0.0012699999999999999; Encounter time (minutes)
+ 
+$NCOMP = 1; Number of aerofoil components 
+$DELS = 0.003; Non-dimensional surface spacing 
+$N_UPP = 120; Number of nodes on upper surface 
+$N_LOW = 120; Number of nodes on lower surface 
+$RUFF = 8; Equivalent sand-grain surface roughness (microns) 
+$NTRAJ = 5; Number of trajectories 

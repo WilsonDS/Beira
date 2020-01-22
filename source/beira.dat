@@ -1,0 +1,26 @@
+simulation, heatflux
+solver, pyro
+timeScheme, average
+bladeInp, ..\test\V136_BEM_WORK_DIR\V136-a65.inp
+bladeOut, ..\test\V136_BEM_WORK_DIR\V136-a65.out
+relativeHumidity, 100
+dorpletSize, 20
+weather, ..\test\Dorotea_power.csv
+bladeSectionsFolder, .\test\V136_Bespoke
+Title, $TITLE = Demo Case;
+Aero, $AERO = 0;
+Mono-disperse, $TRAJ = 0;
+Ice, $ICE = 1;
+Ncomp, $NCOMP = 1; Number of aerofoil components
+Dels, $DELS = 0.003; Non-dimensional surface spacing
+NUpp, $N_UPP = 120; Number of nodes on upper surface
+NLow, $N_LOW = 120; Number of nodes on lower surface
+Ruff, $RUFF = 8; Equivalent sand-grain surface roughness (microns)
+NTraj, $NTRAJ = 5; Number of trajectories
+minimumradius, 2000
+maximumradius, 10000
+minRadius, maxRadius, uppperChord, lowerChord, Temp/Flux
+50, 54 , 2, 3, 5
+44, 48 , 1, 2, 5
+49, 54 , 1, 1, 5
+
